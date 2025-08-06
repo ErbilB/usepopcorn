@@ -5,6 +5,8 @@ import App from "./App";
 
 import StarRating from "./StarRating";
 
+import TextExpander from "./TextExpander";
+
 function Test() {
   const [movieRate, setMovieRate] = useState(0);
   return (
@@ -19,14 +21,20 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/*    <App />*/}
-    <StarRating
+    {/* <StarRating
       maxStar={5}
       size={16}
       color="#fcc"
       messages={["Terrible", "Bad", "Okay", "Decent", "Perfect"]}
       defaultRating={4}
     ></StarRating>
-    <Test></Test>
+    <Test></Test>*/}
+    <TextExpander color={"#2a2"}>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+      aspernatur quaerat impedit voluptatum obcaecati excepturi modi, iure nobis
+      perspiciatis, corrupti sit, quod tempora. Dolorem quam ad pariatur iste
+      non?
+    </TextExpander>
   </React.StrictMode>
 );
 
