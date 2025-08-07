@@ -9,7 +9,7 @@ const textContainerStyle = {
 
 export default function TextExpander({
   children,
-  collapsChar = 50,
+  collapsWord = 15,
   color = "#00f",
   displayButtonUnder = true,
   buttonCollapseText = "Close Text",
@@ -17,7 +17,7 @@ export default function TextExpander({
 }) {
   const [isOpen, setIsOpen] = useState(true);
 
-  const display = displayButtonUnder ? "block" : "inline-block";
+  const display = displayButtonUnder ? "block" : "inline";
 
   const textStyle = {
     margin: "0",
@@ -31,12 +31,16 @@ export default function TextExpander({
     background: "none",
     border: "none",
     color,
+    display,
   };
+
+  const collapsedText =
+    children.split(" ").slice(0, collapsWord).join(" ") + "...";
 
   return (
     <div style={textContainerStyle}>
       <p style={textStyle}>
-        {isOpen && <span style={contentStyle}>{children}</span>}
+        <span style={contentStyle}>{isOpen ? children : collapsedText}</span>
         <button style={buttonStyle} onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? buttonCollapseText : buttonExpandText}
         </button>

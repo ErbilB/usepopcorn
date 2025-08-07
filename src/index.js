@@ -29,7 +29,7 @@ root.render(
       defaultRating={4}
     ></StarRating>
     <Test></Test>*/}
-    <TextExpander color={"#2a2"}>
+    <TextExpander color={"#2a2"} displayButtonUnder={false}>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
       aspernatur quaerat impedit voluptatum obcaecati excepturi modi, iure nobis
       perspiciatis, corrupti sit, quod tempora. Dolorem quam ad pariatur iste
