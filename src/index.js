@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
-//import "./index.css";
+import "./index.css";
 import App from "./App";
 
 import StarRating from "./StarRating";
@@ -20,7 +20,7 @@ function Test() {
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/*    <App />*/}
+    <App />
     {/* <StarRating
       maxStar={5}
       size={16}
@@ -29,12 +29,12 @@ root.render(
       defaultRating={4}
     ></StarRating>
     <Test></Test>*/}
-    <TextExpander color={"#2a2"} displayButtonUnder={false}>
+    {/*<TextExpander color={"#2a2"} displayButtonUnder={false}>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
       aspernatur quaerat impedit voluptatum obcaecati excepturi modi, iure nobis
       perspiciatis, corrupti sit, quod tempora. Dolorem quam ad pariatur iste
       non?
-    </TextExpander>
+    </TextExpander>*/}
   </React.StrictMode>
 );
 
