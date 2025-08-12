@@ -16,14 +16,14 @@ export default function StarRating({
   size = 16,
   messages = [],
   defaultRating = 0,
-  //onSetRating,
+  onSetRating,
 }) {
   const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
 
   function handleRateclick(rate) {
     setRating(rate);
-    // onSetRating(rate); // external state value
+    onSetRating(rate); // external state value
   }
 
   function handleEnter(i) {
