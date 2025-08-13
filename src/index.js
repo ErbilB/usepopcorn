@@ -4,8 +4,8 @@ import "./index.css";
 import App from "./App";
 
 import StarRating from "./StarRating";
-
 import TextExpander from "./TextExpander";
+import GeoChallange from "./components/GeoChallange";
 
 function Test() {
   const [movieRate, setMovieRate] = useState(0);
@@ -35,6 +35,7 @@ root.render(
       perspiciatis, corrupti sit, quod tempora. Dolorem quam ad pariatur iste
       non?
     </TextExpander>*/}
+    {/*    <GeoChallange></GeoChallange>*/}
   </React.StrictMode>
 );
 
